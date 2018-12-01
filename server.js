@@ -28,17 +28,17 @@ app.use('/api/movies/:movieId/summary',
   })
 )
 
-// app.use('/api/movies/:movieid/rating', 
-//   proxy({
-//     target: 'http://localhost:3013'
-//   })
-// )
+app.use('/api/movies/:movieid/rating', 
+  proxy({
+    target: 'http://18.224.5.63/'
+  })
+)
 
-// app.get('/api/movies/:movieid/reviews', 
-//   proxy({
-//     target: 'http://localhost:3013'
-//   })
-// )
+app.get('/api/movies/:movieid/reviews', 
+  proxy({
+    target: 'http://18.224.5.63/'
+  })
+)
 
 app.get('/api/movies/:genre/relatedmovies',
   proxy({
