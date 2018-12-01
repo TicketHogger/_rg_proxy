@@ -7,10 +7,9 @@ const compression = require('compression');
 
 app.use(compression());
 
-app.get('/loaderio-cb491adb149856640b1aafbabec93a06' (req.res)=> {
-  res.send(loaderio-cb491adb149856640b1aafbabec93a06);
+app.get('/loaderio-cb491adb149856640b1aafbabec93a06', (req, res)=> {
+  res.send('loaderio-cb491adb149856640b1aafbabec93a06');
 })
-
 
 app.get('/', (req, res) => {
   res.redirect('movies/1');
